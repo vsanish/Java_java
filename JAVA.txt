@@ -1,0 +1,205 @@
+JAVA 
+
+
+
+
+
+
+relational operator
+
+package firstcode;
+
+import java.util.Scanner; 
+
+public class ClassJava {
+
+	public static void main(String arg[]) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter a Number:");
+		String char1 = "Anish",char2 = "anish";
+		System.out.println(char1 == char2);
+		
+		
+	}
+	
+	
+	
+}
+
+-----------------------------------------------------------
+BITWISE operator
+
+
+package firstcode;
+
+import java.util.Scanner; 
+
+public class ClassJava {
+
+	public static void main(String arg[]) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		int a=9,b=12;
+		int c = a&b;
+		System.out.println(c);
+		c=a|b;
+		System.out.println(c);
+		c= ~a;
+		System.out.println(c);
+		
+		
+	}
+	
+	
+	
+}
+-----------------------------------------------------------
+Increment and Decrement operator
+
+package firstcode;
+
+import java.util.Scanner; 
+
+public class ClassJava {
+
+	public static void main(String arg[]) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter a Number:");
+		int a=3,b=4,c;
+		c = a+b+ a++ + b++ + ++a;
+		System.out.println(c);
+		
+		
+	}
+	
+	
+	
+}
+-----------------------------------------------------------------
+
+
+Compound operator
+
+package firstcode;
+
+import java.util.Scanner; 
+
+public class ClassJava {
+
+	public static void main(String arg[]) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter a Number:");
+		int c=8;
+		c+=100;
+		System.out.println(c);
+		
+		
+	}
+	
+	
+	
+}
+------------------------------------------------------
+
+Addition and store it in another variable
+
+
+package firstcode;
+
+import java.util.Scanner; 
+
+public class ClassJava {
+
+	public static void main(String arg[]) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter a Number:");
+		int a=2,b=3,c;
+		c=a+b;
+		System.out.println(c);
+		
+		
+	}
+	
+	
+	
+}
+---------------------------------------------------------------------
+
+    7
+   777
+ 77777
+7777777
+
+
+package firstcode;
+
+import java.util.Scanner; 
+
+public class ClassJava {
+
+	public static void main(String arg[]) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter a Number:");
+		int num = scan.nextInt();
+		System.out.println("   "+num);
+		System.out.println("  "+num+num+num);
+		System.out.println(" "+num+num+num+num+num);
+		System.out.println(""+num+num+num+num+num+num+num);
+		
+		
+	}
+	
+	
+	
+}
+-------------------------------------------------------------------------------------------
+
+
+Input and output declaring
+
+package firstcode;
+
+import java.util.Scanner; 
+
+public class ClassJava {
+
+	public static void main(String arg[]) {
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("What is youe name:");
+		
+		String name = scan.nextLine();
+		
+		System.out.println("What is your rating:");
+		
+		int rating = scan.nextInt();
+		scan.nextLine();
+		
+		System.out.println("Enter the email:");
+		
+		String email = scan.nextLine();
+		
+		System.out.println("Hello "+name);
+		
+		System.out.println("You give us rating as "+rating);
+		
+		System.out.println("Email is" +email);
+		
+		
+	}
+	
+	
+	
+}
+-------------------------------------------------------------
