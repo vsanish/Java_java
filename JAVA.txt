@@ -312,3 +312,67 @@ public class Ifelse {
 	}
 }
 ----------------------------------------------------------------------------------
+CREATING a object (for instance in class)
+package anishproj1;
+
+class Library{
+	int  User;
+	String Book;
+	int Card;
+	String ReminderMessage;
+	String location;
+}
+
+public class Classobject {
+	
+	public static void main (String arg[]) {
+		Library lib = new Library();
+		
+		lib.User = 25;
+		lib.Book = "Williams john Article";
+		lib.Card = 33;
+		lib.ReminderMessage = "This book is valid to take outside and bring back on 1/8/2025";
+		
+		
+		Library loc = new Library();
+		loc.location = "Salem";
+		
+		
+		System.out.println(lib.User);
+		System.out.println(lib.Book);
+		System.out.println(lib.Card);
+		System.out.println(lib.ReminderMessage);
+		System.out.println(loc.location);
+		
+		
+	}
+
+}
+--------------------------------------------------------------------------------------------
+
+Method function 
+
+package anishproj1;
+ 
+
+public class Method {
+	static int boxVolume(int length, int breath, int width) {
+		int vol;
+		vol = length*breath*width;
+		return vol;
+	}
+	
+	static void printline() {
+		System.out.println("----------------------------------------");
+	}
+	public static void main(String arg[]) {
+		printline();
+		System.out.println("Hello All");
+		int volume = boxVolume(4,5,6);
+		System.out.println(volume);
+		printline();
+	}
+}
+--------------------------------------------------------------------------
+
+
