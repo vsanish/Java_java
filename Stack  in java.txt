@@ -1,0 +1,82 @@
+Stack  in java
+OOPS
+------------------------------------------------------------------------
+
+package anishproj1;
+import java.util.Scanner;
+
+public class Stack {
+	
+	static final int LIMIT = 100;
+	static int stack[] = new int[LIMIT];
+	static int top =-1;
+	
+	
+	
+	public static void main (String args[]) {
+		Scanner scan = new Scanner(System.in);
+		int element;
+		System.out.println("Stack implementation using array \n ");
+		
+		if( top == LIMIT-1) {
+			System.out.println("Stack overflow");
+		
+		}else {
+			System.out.println("Enter the elements to be inserted:");
+			element = scan.nextInt();
+			top++;
+			stack[top] = element;
+			System.out.println("Entered elements are:"+stack[top]);
+		}
+	}
+}
+
+----------------------------------------------------------------------------------------------------------
+
+Stack Data Structure Implementation
+
+package oop;
+
+public class StackDemo {
+	public static void main (String args[]) {
+		Stack s1 = new Stack();
+		s1.push(5);
+		s1.push(6);
+		s1.push(8);
+		System.out.println(s1.pop());
+	}
+}
+
+
+
+package oop;
+
+public class Stack {
+	int s[]= new int[10];
+	int tos;
+	
+	Stack() {
+		tos = -1; 
+	}
+	
+	void push(int item) {
+		if(tos == 9) {
+			System.out.println("Stack is full");
+		}
+		else {
+			s[++tos] = item;
+		}
+	}
+	
+	
+	 int pop() {
+		if(tos>=0) {
+			return s[tos--];
+		}
+		else {
+			System.out.println("Stack is underline");
+			return -1;
+		}
+	 }
+ }
+------------------------------------------------------------------------------------------------------------------- 
