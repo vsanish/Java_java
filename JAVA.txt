@@ -376,3 +376,109 @@ public class Method {
 --------------------------------------------------------------------------
 
 
+
+ASSESMENT QUESTIONS
+***********************************
+
+1       1
+ 2     2
+  3   3
+   4 4
+    5
+   4 4
+  3   3
+ 2     2
+1       1
+
+
+
+
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int rows = 2 * n - 1;
+
+        for (int i = 1; i <= rows; i++) {
+            int val = i <= n ? i : (2 * n - i);  // Value to print
+
+            for (int j = 1; j <= rows; j++) {
+                if (j == i || j == rows - i + 1) {
+                    System.out.print(val);
+                } else {
+                    System.out.print(" ");
+                }
+            }
+
+            System.out.println();
+        }
+    }
+}
+*******************************************************************************************
+
+Sample Input:
+9999999999
+Sample Output:
+9
+
+
+import java.util.Scanner;
+
+public class DigitalRoot {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Read the input number
+        long n = scanner.nextLong();
+        long num = n;
+
+        // Repeat until num becomes a single-digit
+        while (num >= 10) {
+            long sum = 0;
+            while (num > 0) {
+                sum += num % 10;
+                num /= 10;
+            }
+            num = sum;
+        }
+
+        // Print the digital root
+        System.out.println(num);
+    }
+}
+***************************************************************************
+Run 1:
+Input: this is test
+Output: siht si tset 
+
+Run 2:
+Input: Test Case
+Output: tesT esaC 
+
+
+
+import java.util.Scanner;
+
+public class ReverseEachWord {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String input = scanner.nextLine(); // Read the full line
+        String[] words = input.split(" "); // Split input into words
+
+        for (int i = 0; i < words.length; i++) {
+            // Reverse each word
+            String reversed = new StringBuilder(words[i]).reverse().toString();
+            System.out.print(reversed);
+
+            // Print space between words (not after last word)
+            if (i < words.length - 1) {
+                System.out.print(" ");
+            }
+        }
+    }
+}
+**********************************************************************************************
