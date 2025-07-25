@@ -1,0 +1,51 @@
+MaxProduct in 2D 
+
+package org.newproject;
+import java.util.*;
+
+public class MaxProduct {
+	public static void main (String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Number:");
+		int n = sc.nextInt();
+		System.out.println("Enter the "+n+" Values ");
+		int[][] arr = new int[n][n];
+		
+		for(int i=0; i<n; i++) {
+			for(int j=0;j<n; j++) {
+				arr[i][j]=sc.nextInt();
+			}
+		}
+		
+	
+		int maxProduct = 0;
+		for(int i=0; i<n; i++) {
+			for(int j=0; j<n;j++) {
+				//MaxProduct in Horizontal
+				if(j+3 < n) {
+					int product = arr[i][j]*arr[i][j+1]*arr[i][j+2]*arr[i][j+3];
+					maxProduct = Math.max(maxProduct,product);
+				}
+				//MaxProduct in Vertical
+				if(i+3 < n) {
+					int product = arr[i][j]*arr[i+1][j]*arr[i+2][j]*arr[i+3][j];
+					maxProduct = Math.max(maxProduct,product);
+				}
+				//MaxProduct in Diagonal down-Right
+				if(i+3<n && j+3<n) {
+					int product = arr[i][j]*arr[i+1][j+1]*arr[i+2][j+2]*arr[i+3][j+3];
+					maxProduct = Math.max(maxProduct, product);
+				}
+				//MaxProduct in Diagonal down-left
+				if(i+3<n && j-3 >=0) {
+					int product = arr[i][j]*arr[i+1][j-1]*arr[i+2][j-2]*arr[i+3][j-3];
+					maxProduct = Math.max(maxProduct, product);
+				}
+			}
+		}
+		
+		System.out.println(maxProduct);
+	}
+
+}
+-------------------------------------------------------------------------------
