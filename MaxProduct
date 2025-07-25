@@ -48,4 +48,33 @@ public class MaxProduct {
 	}
 
 }
--------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+
+Pythagoras Theorem Concept
+"FORMULA => c^2 = (a^2 + b^2) "
+
+package org.newproject;
+import java.util.*;
+
+public class Pythagoras {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the value of A:");
+		double a = sc.nextInt();
+		System.out.println("Enter the value of B:");
+		double b = sc.nextInt();
+		
+		//Pythagoras Theorem Formula: c^2= a^2 + b^2;
+		
+		double c = Math.sqrt((a*a) + (b*b));
+		System.out.print("Pythagoras:"+c);
+		sc.close();
+	}
+
+}
+
+---------------------------------------------------------------------------------------------
+
+	
+
+
