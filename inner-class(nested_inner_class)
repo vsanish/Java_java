@@ -1,0 +1,30 @@
+INNER CLASS DEFINE
+========================
+
+package org.newproject;
+import java.util.*;
+
+class Outer{
+	int num;
+	void outerclass() {
+		System.out.println("Outer class");
+	}
+	static class Inner{
+		int x;
+	    void innerclass() {
+			System.out.println("Inner class");
+		}
+	}
+}
+
+
+public class InnerDemo {
+
+	public static void main(String[] args) {
+		Outer o = new Outer();
+		o.num=10;
+		o.outerclass();
+		Outer.Inner i =new Outer.Inner();
+		i.innerclass();
+	}
+}
