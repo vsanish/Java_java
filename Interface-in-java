@@ -1,0 +1,40 @@
+Interface in java 
+============================================
+
+package org.newproject;
+import java.util.*;
+
+interface Animal{
+	void makeSound();
+	
+	default void sleep() {
+		System.out.println("Sleeping...");
+	}
+}
+
+class dog implements Animal{
+	public void makeSound() {
+		System.out.println("Dog says:Woof Woof");
+	}
+}
+
+class cat implements Animal{
+	public void makeSound() {
+		System.out.println("Cat says:meow meow");
+	}
+}
+
+
+
+
+public class InterfaceDemo {
+	public static void main(String[] args) {
+		Animal a1 = new dog();
+		Animal a2 = new cat();
+		a1.makeSound();
+		a1.sleep();
+		a2.makeSound();
+		a2.sleep();
+	}
+
+}
