@@ -1,0 +1,24 @@
+package org.newproject;
+import java.util.*;
+
+public class InputAndOutput {
+	public static void main(String[] args) {
+		String a;
+		int b;
+		float c;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the String:");
+		a =sc.nextLine();
+		System.out.println("String is:"+a);
+		
+		System.out.println("Enter the integer:");
+		b=sc.nextInt();
+		System.out.println("Integer is:"+b);
+		
+		System.out.println("Enter the FLoat:");
+		c= sc.nextFloat();
+		System.out.println("Float is:"+c);
+	}
+
+}
