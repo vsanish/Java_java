@@ -1,0 +1,20 @@
+package org.newproject;
+import java.util.*;
+
+public class SwappingWithOut3rdVariable {
+	public static void main (String[] args) {
+		int a,b;
+		Scanner sc = new Scanner(System.in);
+		
+		a = sc.nextInt();
+		b = sc.nextInt();
+		
+		System.out.println("Before the swapping: \n a= "+a+"\n b= "+b);
+		
+		a = a+b;
+		b = a-b;
+		a = a-b;
+		System.out.println("after the Swapping: \n a= "+a+"\n b= "+b);
+	}
+
+}
