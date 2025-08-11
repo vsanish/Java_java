@@ -1,0 +1,16 @@
+Relational opertor
+---------------------------------
+package anishproj1;
+import java.util.*;
+
+public class Relational_operator {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		char i,j;
+		i='a';
+		j='a';
+		System.out.println(i==j);
+
+	}
+
+}
