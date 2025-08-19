@@ -1,0 +1,26 @@
+Find the Largest Numbers
+----------------------------------
+
+package anishproj1;
+import java.util.*;
+
+public class FindMaxNumber {
+	public static void main (String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter three Numbers:");
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		int z = sc.nextInt();
+		
+		if(x > y && x > z)
+			System.out.println("X is greater "+x);
+		else if(y>x && y>z)
+			System.out.println("Y is greater "+y);
+		else if(z>y && z>x)
+			System.out.println("Z is greater "+z);
+		else
+			System.out.println("Enter number more than 0!");
+		}
+	
+
+}
