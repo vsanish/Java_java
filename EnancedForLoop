@@ -1,0 +1,66 @@
+EnancedForLoop
+-------------------------
+
+package anishproj1;
+import java.util.*;
+
+public class EnancedForLoop {
+	
+	
+	//For Numbers
+	public static void main (String[] args) {
+		int numbers[] = {1,2,3,4,5,6,7,8,9,10};
+		
+		for(int num:numbers) {
+			System.out.println(num);
+		}
+		
+	//For String
+		String languages[] = {"C","C++","Java","Python","Ruby"};
+				
+		for(String each:languages) {
+			System.out.println(each);
+		}
+	}
+
+}
+
+-------------------------------------------------------------------------------
+
+Using Inheritance method
+----------------------------------
+
+package anishproj1;
+
+class NumberPrinter{
+	int numbers [] = {1,2,3,4,5,6,7,8,9,10};
+	
+	void printnumbers(){
+		System.out.println("Numbers:");
+		for(int num:numbers) {
+			System.out.println(num);
+		}
+	}
+}
+
+class LanguagePrinter extends NumberPrinter{
+	String languages []= {"C","C++","Java","Python","Ruby"};
+	
+	void printlanguages() {
+		System.out.println("Languages:");
+		for(String lang:languages) {
+			System.out.println(lang);
+		}
+	}
+}
+
+public class EnhancedForLoopInheritance {
+	public static void main(String[] args) {
+		LanguagePrinter lp = new LanguagePrinter();
+		lp.printnumbers();
+		System.out.println();
+		lp.printlanguages();
+	}
+
+}
+
