@@ -1,0 +1,15 @@
+LoopToPrintAlphabet
+
+package anishproj1;
+import java.util.*;
+
+public class LoopToPrintAlphabet {
+	public static void main(String[] args) {
+		char ch;
+		for(ch = 'a';ch<='z';ch++) {
+			System.out.print(ch+" ");
+		}
+	}
+
+	
+}
